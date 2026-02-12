@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/Button";
 
 export function NotFound() {
   return (
-    <div className="mx-auto flex max-w-5xl flex-col items-center justify-center px-6 py-32 text-center">
+    <div className="flex w-full flex-col items-center justify-center px-5 py-32 text-center md:px-8 lg:px-12">
       <p className="text-6xl font-bold text-neutral-200">404</p>
       <h1 className="mt-4 text-2xl font-bold text-neutral-900">
         Page not found

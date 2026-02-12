@@ -26,7 +26,7 @@ const cards = [
 
 export function Home() {
   return (
-    <div className="mx-auto max-w-5xl px-6">
+    <div className="w-full px-5 md:px-8 lg:px-12">
       {/* Hero */}
       <section className="py-24 text-center">
         <h1 className="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl">

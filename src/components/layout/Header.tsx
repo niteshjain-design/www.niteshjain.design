@@ -12,7 +12,7 @@ export function Header() {
 
   return (
     <header className="border-b border-neutral-100 bg-white/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
+      <div className="flex w-full items-center justify-between px-5 py-4 md:px-8 lg:px-12">
         <Link to="/" className="text-lg font-bold tracking-tight text-neutral-900">
           niteshjain<span className="text-neutral-400">.design</span>
         </Link>
