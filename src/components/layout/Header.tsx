@@ -3,6 +3,7 @@ import { cn } from "@/lib/cn";
 
 const navLinks = [
   { to: "/", label: "Home" },
+  { to: "/portfolio", label: "Portfolio" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
 ];
@@ -14,7 +15,7 @@ export function Header() {
     <header className="border-b border-neutral-100 bg-white/80 backdrop-blur-md">
       <div className="flex w-full items-center justify-between px-5 py-4 md:px-8 lg:px-12">
         <Link to="/" className="text-lg font-bold tracking-tight text-neutral-900">
-          niteshjain<span className="text-neutral-400">.design</span>
+          Nitesh Jain
         </Link>
 
         <nav className="flex items-center gap-1">
