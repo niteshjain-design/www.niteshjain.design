@@ -3,7 +3,6 @@ import { cn } from "@/lib/cn";
 
 const navLinks = [
   { to: "/", label: "Home" },
-  { to: "/portfolio", label: "Portfolio" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
 ];
@@ -13,12 +12,14 @@ export function Header() {
 
   return (
     <header className="border-b border-neutral-100 bg-white/80 backdrop-blur-md">
-      <div className="flex w-full items-center justify-between px-5 py-4 md:px-8 lg:px-12">
+      <div className="grid w-full grid-cols-3 items-center px-5 py-4 md:px-8 lg:px-12">
+        {/* Left — Logo */}
         <Link to="/" className="text-lg font-bold tracking-tight text-neutral-900">
           Nitesh Jain
         </Link>
 
-        <nav className="flex items-center gap-1">
+        {/* Center — Nav */}
+        <nav className="flex items-center justify-center gap-1">
           {navLinks.map(({ to, label }) => (
             <Link
               key={to}
@@ -34,6 +35,16 @@ export function Header() {
             </Link>
           ))}
         </nav>
+
+        {/* Right — Portfolio CTA */}
+        <div className="flex justify-end">
+          <Link
+            to="/portfolio"
+            className="inline-flex items-center justify-center rounded-xl bg-neutral-900 px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-neutral-800"
+          >
+            Portfolio
+          </Link>
+        </div>
       </div>
     </header>
   );
