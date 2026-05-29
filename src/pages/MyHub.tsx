@@ -3,7 +3,7 @@ import { Lock, BookOpen, MapPin, Target } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/Button";
 
-const PASSWORD = "KrishnaKrishna12#";
+const PASSWORD = "Happy";
 
 export function MyHub() {
   const [unlocked, setUnlocked] = useState(
